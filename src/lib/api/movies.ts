@@ -4,7 +4,7 @@ import { tmdbFetch } from "./client";
 // Popular movies
 export async function getPopularMovies() {
     try {
-        await new Promise(res => setTimeout(res, 2000)); // simulate latency
+        await new Promise(res => setTimeout(res, 1500)); // simulate latency
         const res = await tmdbFetch<MoviesResponse>("/movie/popular");
 
         if (!res.results?.length) {
@@ -38,7 +38,7 @@ export async function getTopRatedMovies() {
 // Upcoming movies
 export async function getUpcomingMovies() {
     try {
-        await new Promise(res => setTimeout(res, 1200)); // simulate latency
+        await new Promise(res => setTimeout(res, 3500)); // simulate latency
         const res = await tmdbFetch<MoviesResponse>("/movie/upcoming");
 
         if (!res.results?.length) {
