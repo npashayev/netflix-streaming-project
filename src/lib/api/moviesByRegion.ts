@@ -10,7 +10,7 @@ export async function getPopularMoviesByRegion(region?: string) {
             `/movie/popular?region=${finalRegion}`
         );
 
-        await new Promise(res => setTimeout(res, 1500)); // simulate latency
+        await new Promise(res => setTimeout(res, 2500)); // simulate latency
 
         if (!res.results?.length) {
             throw new Error(`Empty 'popular' movies for region: ${finalRegion}`);
@@ -32,7 +32,7 @@ export async function getTopRatedMoviesByRegion(region?: string) {
             `/movie/top_rated?region=${finalRegion}`
         );
 
-        await new Promise(res => setTimeout(res, 1000)); // simulate latency
+        await new Promise(res => setTimeout(res, 3000)); // simulate latency
 
         if (!res.results?.length) {
             throw new Error(`Empty 'top rated' movies for region: ${finalRegion}`);
