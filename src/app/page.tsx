@@ -47,7 +47,7 @@ export default function Home() {
                 height={28}
                 width={28}
                 alt='icon'
-                className='relative z-10 rotate-12 group-hover:rotate-45 transition-transform duration-300 hover:animate-bounce'
+                className='relative z-10 rotate-12 group-hover:rotate-30 transition-transform duration-300 group-hover:animate-bounce'
               />
             </Link>
 
