@@ -15,7 +15,6 @@ export async function GET(req: Request) {
     });
 
     const data = await tmdbRes.json();
-    console.log("TMDB RESPONSE:", data);
 
     if (!data.results) {
         console.error("TMDB returned invalid data:", data);
