@@ -24,7 +24,6 @@ const eslintConfig = defineConfig([
       "no-return-await": "warn",
       "require-await": "warn",
       "react/jsx-boolean-value": ["warn", "never"],
-      "react/self-closing-comp": "warn",
       "no-empty": ["warn", { allowEmptyCatch: true }],
     },
   },
